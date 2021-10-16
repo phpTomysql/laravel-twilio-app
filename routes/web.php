@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 
+Route::post('/twilio/webhook',[ContactController::class, 'index']);
