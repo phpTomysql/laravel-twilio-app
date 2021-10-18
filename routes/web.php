@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CallResponderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,4 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::post('/twilio/webhook',[ContactController::class, 'index']);
+Route::post('/twilio/webhook',[CallResponderController::class, 'index']);
+Route::post('/twilio/webhook/q1',[CallResponderController::class, 'q1']);
+Route::post('/twilio/webhook/q2',[CallResponderController::class, 'q2']);
+Route::post('/twilio/webhook/q3',[CallResponderController::class, 'q3']);

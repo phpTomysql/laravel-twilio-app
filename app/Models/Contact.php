@@ -20,6 +20,9 @@ class Contact extends Model
         'pincode',
         'address',
         'first_name',
-        'last_name'
+        'last_name',
+        'CallSid',
+        'q1',
+        'q2'
     ];
 }

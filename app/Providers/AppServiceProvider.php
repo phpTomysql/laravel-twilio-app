@@ -13,7 +13,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            'App\Repositories\ContactRepositoryInterface',
+            'App\Repositories\ContactRepository',
+            'App\Services\ContactService'
+        );
     }
 
     /**

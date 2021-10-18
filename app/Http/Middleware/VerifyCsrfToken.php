@@ -13,5 +13,8 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         'twilio/webhook',
+        'twilio/webhook/q1',
+        'twilio/webhook/q2',
+        'twilio/webhook/q3',
     ];
 }
